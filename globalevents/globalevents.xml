@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+	<!-- Db Cleaner -->
+	<globalevent name="dbcleaner" type="startup" event="script" value="dbcleaner.lua"/>
+	
+	<!-- Open Server <globalevent name="OpenServer" time="12:00:00" event="script" value="openServer.lua"/> -->
+
+	<!-- Global Save Automatico -->
+	<globalevent name="GlobalSave" time="07:00" event="script" value="GlobalSave.lua"/>
+	
+	<!-- Random Monster -->
+	<globalevent name="RandomRaids" interval="3600000" event="script" value="Random_Raids.lua"/>
+	
+	<!-- SERVER SAVE [[
+	<globalevent name="save" interval="5200000" event="script" value="save.lua"/> ]] -->
+	
+	<!-- Castle 24h  -->
+	<globalevent name="Castle24h" time="22:00:00" event="script" value="events/castle.lua"/>
+	
+	<!-- Favela 24h  -->
+	<globalevent name="Favela24h" time="19:00:00" event="script" value="events/favela.lua"/>
+
+	<!-- Cast system -->
+	<globalevent name="viewers" interval="10000" event="script" value="viewers.lua"/>
+
+	<!-- Lottery System -->
+	<globalevent name="lottery" interval="35000" event="script" value="lottery.lua"/>
+	
+	<!-- online points -->
+	<globalevent name="onlinePoints" interval="5000" event="script" value="onlinePoints.lua"/>
+	
+	<!-- death spawn -->
+	<globalevent name="deathspawn" interval="60000" event="script" value="deathspawn.lua"/>
+
+	<!-- Magic Effects -->
+	
+	<!-- Scripts de Magic Effects -->
+	<globalevent name="magicEffects" interval="3000" script="magiceffects.lua"/>
+	<globalevent name="magicEffectsseta" interval="5000" script="magiceffectsseta.lua"/>	
+	<globalevent name="texto" interval="3000" script="texto.lua" />
+	
+	<!-- Favela -->
+	<globalevent name="mEFavela" interval="2000" script="MagicEffects/meFavela.lua"/>
+
+	<!-- ITem VIP ANTI CLONER -->
+    <globalevent name="itemvip" interval="10000" event="script" value="itemvip.lua"/>
+	
+	<!-- Script Startup carregado de starts de outros scripts -->
+	<globalevent name="serverstart" type="start" event="script" value="start.lua"/>
+
+	<!-- scripts padroes-->
+	<globalevent name="clean" interval="5000000" event="script" value="clean.lua"/>
+	<globalevent name="shop" interval="30000" event="script" value="shop.lua"/>
+	<globalevent name="playersrecord" type="record" event="script" value="record.lua"/>
+	
+	<!-- Mensagens automaticas -->
+	<globalevent name="mensagem" interval="300000" script="mensagens/mensagem.lua"/>
+	<!-- <globalevent name="mensagemred" interval="3200000" script="mensagens/mensagemred.lua"/> -->
+	<!-- <globalevent name="info" interval="3800000" event="script" value="mensagens/info.lua"/> -->
+	<!-- <globalevent name="mensagemorange" interval="3500000" script="mensagens/mensagemorange.lua"/> -->
+	
+	<!-- Raids dos bosses, megabosses e invasions -->
+	<globalevent name="raids" interval="15000" event="script" value="raid.lua"/>
+	
+	</globalevents>
+	<!-- antigos e sem uso -->
+		<!--- Blood Castle Automatico -->
+	<!-- <globalevent name="bloodstart" type="start" event="script" value="BloodGlobalEvent.lua"/> -->
+	<!-- <globalevent name="Blood Castle" interval="43200000" event="script" value="BloodGlobalEvent.lua"/> -->
+	<!-- <globalevent name="Blood Castle" time="17:00" event="script" value="BloodGlobalEvent.lua"/> -->
+	
+	<!-- Defend the Towers (ChaitoSoft - Desenvolvedores Open Tibia) -->
+	<!-- <globalevent name="dttClean" type="startup" event="script" value="dttClean.lua"/> -->
+	<!-- <globalevent name="dttOpen" time="16:00:00" event="script" value="DTT.lua"/> -->
+	
+	<!-- Resetando os global storages do Event WAR -->
+	<!-- <globalevent name="EventWarClean" type="startup" event="script" value="war_event_clean.lua"/> -->
+	
+	<!-- Resetando os guild points -->
+	<!-- <globalevent name="GuildPointsClean" type="startup" event="script" value="guild_points_clean.lua"/> -->
+
+
+	<!-- Stream Temple 
+        <globalevent name="stream" interval="700" script="stream_temple.lua"/> -->
+	<!-- WOE 
+	<globalevent name="WoE" interval="30000" event="script" value="woe.lua"/>
+	<globalevent name="start_woe" interval="30000" event="script" value="start_woe.lua"/>
+	<globalevent name="Guardias" interval="1000" event="script" value="guardias.lua"/> -->
+	
+	<!-- Capture the flag
+	<globalevent name="CTFCheck" time="16:30:00" event="script" value="CTFMax.lua"/>-->
+
+	<!-- Funcoes de Remover monstros de Diferentes Areas -->
+	<!-- Remove monster da Area de bosses free, donate e do Ahmad Adib (Rei) do templo -->
+	<!-- <globalevent name="removemonsterF" interval="1200000" event="script" value="RemoveMonster/removeMonsterAreaFree.lua"/> -->
+	<!-- <globalevent name="removemonsterD" interval="1200000" event="script" value="RemoveMonster/removeMonsterAreaDonate.lua"/> -->
+	<!-- <globalevent name="removemonsterT" interval="1200000" event="script" value="RemoveMonster/removeMonsterTemplo.lua"/> -->
+
+	<!-- Zombie Event -->
+	<!-- <globalevent name="Zombie" interval="55000" event="script" value="Zombie.lua"/> -->
+
+	<!-- Premium Verificator 24h -->
+	<!-- <globalevent name="PremiumOver" time="01:00" event="script" value="premium_verificator.lua"/> -->
+	
+	<!-- Evento - Snow Ball War (Desenvolvido por ChaitoSoft.com)-->
+	<!-- <globalevent name="StartSBW" time="10:00:00" event="script" value="SBW.lua"/> -->
+	<!-- <globalevent name="AnimatedSBW" interval="1500" event="script" value="SBW.lua"/> -->
+	<!-- Sleeping -->
+	<!-- <globalevent name="sleep" interval="20000" event="script" value="sleeping.lua"/> -->
+	<!-- GWC -->
+	<!-- <globalevent name="GWC_advice" interval="300000" script="GWC.lua"/> -->
+
+	<!-- House Cleaner (<globalevent name="HouseClean" interval="60" event="script" value="houseclean.lua"/>) -->
+	<!-- <globalevent name="HouseClean" time="04:00" event="script" value="houseclean/houseclean.lua"/> -->
+	<!-- global save agora e automatico, nao precisa desse -->
+	<!-- <globalevent name="save" interval="2600000" event="script" value="save.lua"/> -->
+	<!-- <globalevent name="raidxp" interval="20000" event="script" value="raidxp.lua"/> -->
+
+	<!-- Noob Event Death Hall -->
+	<!-- <globalevent name="raidEventNoob" interval="20000" event="script" value="raidEventNoob.lua"/> -->
+
+	<!-- auto castle: desativei pois coloquei agora 24h -->
+	<!-- <globalevent name="CastleWarAutomatico" interval="5000" event="script" value="AutoCastle.lua"/> -->
+
+	<!-- auto favela vou deixar 24h tambem -->
+	<!-- <globalevent name="FavelaAutomatico" interval="5000" event="script" value="AutoFavela.lua"/> -->
+
+	<!-- Evento de War Automatico -->
+	<!-- <globalevent name="EventWar" interval="5000" event="script" value="EventWAR.lua"/> -->
+	
+	<!-- {
+	<globalevent name="raids" interval="15000" event="script" value="raid.lua"/>
+	<globalevent name="sorteio" interval="200000" script="sorteio.lua"/>
+	<globalevent name="timer_example" time="21:35" event="script" value="my_script.lua"/>
+	<globalevent name="doublepoints" interval="1000000" script="doublepoints.lua"/> 
+	}-->

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creaturescripts>
+	
+	<!-- Anti Magebomb e Acc maker -->
+	<event type="login" name="antimagebomb" event="script" value="antimagebomb_accmaker.lua"/>
+	
+	<!-- Zombie Spider -->
+	<event type="preparedeath" name="Spider" script="spider.lua"/>
+	
+	<!-- transferindo task -->
+	<event type="kill" name="KillTask" event="script" value="tasks/task_kill.lua"/>
+	
+	<!-- Stamina Trainer -->
+	<event type="attack" name="stamina_trainer" event="script" value="stamina_trainer.lua"/>
+	
+	<!-- Bones -->
+	<event type="kill" name="bone" event="script" value="bone.lua"/>
+	
+	<!-- Defend the Towers (ChaitoSoft - Desenvolvedores Open Tibia) -->
+	<event type="death" name="dttDeath" event="script" value="DTT.lua"/> 
+	<event type="PrepareDeath" name="dttPrepare" event="script" value="DTT.lua"/>
+	<event type="statschange" name="dttStats" event="script" value="DTT.lua"/>
+	<event type="outfit" name="dttOutfit" event="script" value="DTT.lua"/>
+	<event type="login" name="dttLogin" event="script" value="DTT.lua"/>
+	<event type="combat" name="dttCombat" event="script" value="DTT.lua"/>
+	
+	<!-- Saudacoes -->
+	<event type="login" name="Saudacoes" event="script" value="saudacoes.lua"/>
+
+	<!-- Evento League of War -->
+	<event type="PrepareDeath" name="EventDead" event="script" value="Event_Dead.lua"/>
+	<event type="kill" name="EventDead_kill" event="script" value="Event_Dead.lua"/>
+	<event type="think" name="EventDead_effect" event="script" value="Event_Dead.lua"/>
+	<event type="outfit" name="EventDead_outfit" event="script" value="Event_Dead.lua"/>
+	<event type="combat" name="EventDead_attack" event="script" value="Event_Dead.lua"/>
+	<!-- <event type="attack" name="EventDead_attack" event="script" value="Event_Dead.lua"/> -->
+	
+	<!-- Matar monstro e todos receberem recompensa -->
+	<event type="kill" name="MonsterKill" event="script" value="recompensa/monsterkill.lua"/>
+
+	<!-- anunciar morte -->
+	<event type="death" name="DeathPlayer" event="script" value="anunciar_morte.lua"/>
+
+	<!-- Cast System e tambem zerar algumas storages do castle e favela -->
+	<!-- Tambem e o logout do onlinePoints -->
+	<event type="logout" name="CastLogout" event="script" value="logout.lua"/>
+
+	<!-- Sistema - Heroic Patentes (corrigido por Devotti, chaitosoft incompetente) -->
+	<event type="kill" name="ArmyKill" event="script" value="army.lua"/>
+	<event type="look" name="fraglook" event="script" value="fraglook.lua"/>  
+	<event type="login" name="fraglook_register" event="script" value="fraglook.lua"/>
+
+	<!-- Automatic Bless -->
+	<event type="login" name="AutomaticBless" event="script" value="autobless.lua"/>
+
+	<!-- Kill Tower -->
+	<event type="attack" name="towerattack" event="script" value="towerattack.lua"/>
+
+	<!-- Auto Loot -->
+	<!-- <event type="login" name="aloot_reg" event="script" value="aloot.lua"/> -->
+	<!-- <event type="kill" name="aloot_kill" event="script" value="aloot.lua"/> -->
+
+	<!-- Monstro morre aparece TP -->
+	<event type="death" name="tp" event="script" value="tp.lua"/>
+	
+	<!-- TP do beira mar na favela -->
+	<event type="death" name="tp_pos" event="script" value="tp_choose_pos.lua"/>
+
+	<!-- Frags no look -->
+	<event type="look" name="fraglook" event="script" value="fraglook.lua"/>
+	
+	<!-- Dodge System -->
+	<event type="statschange" name="dodge" event="script" value="dodge.lua"/>
+
+	<!-- Recebe Item ou dinheiro por level alcancado -->
+	<event type="advance" name="recompensa" event="script" value="recompensa/level20.lua"/>
+	<event type="advance" name="recompensa1" event="script" value="recompensa/level80.lua"/>
+	<event type="advance" name="recompensa2" event="script" value="recompensa/level130.lua"/>
+
+	<!-- Dodge Lost -->
+	<event type="PrepareDeath" name="dodgelost" script="dodgelost.lua"/>
+
+	<!-- owned ao morrer -->
+	<event type="preparedeath" name="onPrepareDeath" event="script" value="preparedeath.lua"/>
+	
+	<!-- Kill Bosses -->
+	<event type="kill" name="bosses" event="script" value="bosses.lua"/>
+
+	<!-- Exp Potion -->
+	<event type="logout" name="perderefeito" event="script" value="perderefeito.lua"/>
+	
+	<!-- full hp e mana ao upar de level -->
+	<event type="advance" name="FullHpMana" event="script" value="fullhpmana.lua"/>
+	
+	<!-- checar vip donate -->
+	<event type="login" name="FimVip" event="script" value="vip.lua"/>
+	
+	<!-- Extended Upcode [[
+	<event type="extendedopcode" name="ExtendedOpcode" event="script" value="extendedopcode.lua"/> ]]-->
+	
+	<!-- Party and Guild Protection -->
+	<event type="combat" name="partyAndGuildProtection" event="script" value="partyAndGuildProtection.lua"/>
+	<event type="think" name="party_effect" event="script" value="party_effect.lua"/>
+	
+	<!-- Scripts Padroes -->
+	<event type="login" name="PlayerLogin" event="script" value="login.lua"/>
+	<event type="channeljoin" name="GuildMotd" event="script" value="guildmotd.lua"/>
+	<event type="mailreceive" name="Mail" event="script" value="mail.lua"/>
+	<event type="reportbug" name="SaveReportBug" script="reportbug.lua"/>
+	<event type="think" name="Idle" event="script" value="idle.lua"/>
+	<event type="think" name="SkullCheck" event="script" value="skullcheck.lua"/>
+	<event type="death" name="PlayerDeath" event="script" value="playerdeath.lua"/>
+	<event type="login" name="MutePlayer" event="script" value="mute_check.lua"/>
+	
+	<!-- Skull Amulets -->
+	<event type="death" name="Skull_Drop" event="script" value="skull_amulets.lua"/>
+	
+	<!-- Blood Castle Event -->
+	<event type="death" name="guardablood" event="script" value="BloodCreatureGuarda.lua"/>
+	<event type="death" name="arcanjoblood" event="script" value="BloodCreatureAnjo.lua"/>
+	<event type="death" name="morrerblood" event="script" value="BloodCreature.lua"/>
+	<event type="death" name="loginblood" event="script" value="BloodCreature.lua"/>
+	
+	</creaturescripts>
+	<!-- Antigos e sem uso -->
+	<!-- Zombie Event -->
+	<!-- <event type="target" name="ZombieTarget" event="script" value="Zombie.lua"/> -->
+	<!-- <event type="statschange" name="ZombieStats" event="script" value="Zombie.lua"/> -->
+	<!-- <event type="preparedeath" name="forever amulet" event="script" value="aol.lua"/> -->
+    <!-- <event type="death" name="teleportmonster" script="tpmonster.lua"/> -->
+	<!-- <event type="login" name="playercheck" script="playercheck.lua"/> -->
+	<!-- <event type="login" name="CheckVip" script="endvip.lua"/> -->
+	<!-- <event type="login" name="Expvip" event="script" value="expvip.lua"/> -->
+	<!-- <event type="death" name="ga1" event="script" value="ga1.lua"/> -->
+	<!-- <event type="death" name="ga2" event="script" value="ga2.lua"/> -->
+    <!-- <event type="death" name="ga3" event="script" value="ga3.lua"/> -->
+    <!-- <event type="death" name="gv1" event="script" value="gv1.lua"/> -->
+    <!-- <event type="death" name="gv2" event="script" value="gv2.lua"/> -->
+	<!-- <event type="death" name="gv3" event="script" value="gv3.lua"/> -->
+	<!-- <event type="login" name="AntiAccBomb" script="testeantimagebomb.lua"/> -->
+	<!-- <event type="login" name="FirstItems" event="script" value="firstitems.lua"/> -->
+	<!-- <event type="login" name="Effect" event="script" value="effect.lua"/> -->	
+	<!-- <event type="kill" name="Tasks" script="taskkill.lua"/> -->
+	<!-- Promotion Aura -->
+	<!-- <event type="login" name="WalkSystem" event="script" value="walksystem.lua"/> -->
+	<!-- <event type="login" name="DeathLogin" event="script" value="anunciar_morte.lua"/> -->
+	<!-- WoE -->
+	<!-- <event type="death" name="empe_broken" event="script" value="empe_broken.lua"/> -->
+	<!-- <event type="death" name="pre_empes" event="script" value="pre_empes.lua"/> -->
+	<!-- <event type="statschange" name="empe_dmg" event="script" value="empe_dmg.lua"/> -->
+	<!-- <event type="login" name="reg_vs_guard" event="script" value="vs_guard.lua"/> -->
+	<!-- <event type="statschange" name="vs_guard" event="script" value="vs_guard.lua"/> -->
+		<!-- Anti MC e Anti magebomb -->
+	<!-- <event type="login" name="antimagebomb" event="script" value="antimagebomb.lua"/> -->
+	<!-- <event type="login" name="antimc" event="script" value="antimc.lua"/> -->
+	
+	<!-- CRITICAL SYSTEM -->
+    <!-- <event type="statschange" name="critical" event="script" value="critical.lua"/> -->
+	<!-- premium verificator -->
+	<!-- <event type="think" name="PremiumVerify" event="script" value="premium_verificator.lua"/> -->
+	<!-- Battle Field Event -->
+	<!-- <event type="login" name="BattleLogin" event="script" value="BattleCreatureScript.lua"/> -->
+	<!-- <event type="PrepareDeath" name="BattleDeath" event="script" value="BattleCreatureScript.lua"/> -->
+	<!-- <event type="combat" name="BattleTeam" event="script" value="BattleCreatureScript.lua"/> -->
+	<!-- <event type="PrepareDeath" name="pvparena" script="pvparena.lua"/> -->
+	<!-- <event type="death" name="incendio" script="incendioMonster.lua"/> -->
+	<!-- <event type="login" name="loginAura" event="script" value="creatureAura.lua"/> -->
+	<!-- <event type="statschange" name="statsAura" event="script" value="creatureAura.lua"/> -->
